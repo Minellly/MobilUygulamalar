@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:background="@android:color/darker_gray"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:padding="8dp">
+
+        <!-- Buttons -->
+        <Button android:text="C" android:id="@+id/btn_clear"/>
+        <Button android:text="x^y" android:id="@+id/btn_pow"/>
+        <Button android:text="n!" android:id="@+id/btn_fact"/>
+        <Button android:text="√" android:id="@+id/btn_sqrt"/>
+
+        <Button android:text="7" android:id="@+id/btn_7"/>
+        <Button android:text="8" android:id="@+id/btn_8"/>
+        <Button android:text="9" android:id="@+id/btn_9"/>
+        <Button android:text="+" android:id="@+id/btn_add"/>
+
+        <Button android:text="4" android:id="@+id/btn_4"/>
+        <Button android:text="5" android:id="@+id/btn_5"/>
+        <Button android:text="6" android:id="@+id/btn_6"/>
+        <Button android:text="-" android:id="@+id/btn_subtract"/>
+
+        <Button android:text="1" android:id="@+id/btn_1"/>
+        <Button android:text="2" android:id="@+id/btn_2"/>
+        <Button android:text="3" android:id="@+id/btn_3"/>
+        <Button android:text="x" android:id="@+id/btn_multiply"/>
+
+        <Button android:text="0" android:id="@+id/btn_0"/>
+        <Button android:text="." android:id="@+id/btn_dot"/>
+        <Button android:text="=" android:id="@+id/btn_equal"/>
+        <Button android:text="/" android:id="@+id/btn_divide"/>
+    </GridLayout>
+</LinearLayout>
